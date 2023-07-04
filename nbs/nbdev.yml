@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "bytetype"
+  site-url: "https://dsm-72.github.io/bytetype"
+  description: "byte type"
+  repo-branch: main
+  repo-url: "https://github.com/dsm-72/bytetype"
