@@ -10,7 +10,47 @@ A simple Byte type
 pip install bytetype
 ```
 
-## How to use
+## Usage
+
+**NOTE** that: -
+[`ByteSize`](https://dsm-72.github.io/bytetype/enums.html#bytesize)
+corresponds to the base numeric value to use i.e. `1024` -
+[`BytesUnit`](https://dsm-72.github.io/bytetype/enums.html#bytesunit)
+corresponds to the string unit to use i.e. `"KB"`
+
+### Examples
+
+#### Enums
+
+##### get byte sizes
+
+``` python
+ByteSize.memdict
+```
+
+##### get byte size index
+
+``` python
+{k: bytes_idx(v) for k, v in ByteSize.items}
+```
+
+##### convert unit to size
+
+``` python
+BytesUnit.from_bytes(ByteSize.MB), BytesUnit.from_bytes(ByteSize.GB)
+```
+
+#### Convert bytes to size
+
+``` python
+{k: bytes_to_size(v * (2*i+1)) for i, (k, v) in enumerate(ByteSize.items)}
+```
+
+``` python
+{bytes_to_size(ByteSize.KB * i) for i in range(1, 10)}
+```
+
+#### Iterate over files
 
 ``` python
 for e in os.listdir():
