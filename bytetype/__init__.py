@@ -1,4 +1,4 @@
-__version__ = "0.0.4"
+__version__ = "0.0.5"
 
 from bytetype.units import (
     BYTE, KILOBYTE, MEGABYTE, GIGABYTE, TERABYTE,

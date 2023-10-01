@@ -5,7 +5,7 @@ __all__ = ['BYTE', 'KILOBYTE', 'MEGABYTE', 'GIGABYTE', 'TERABYTE', 'PETABYTE', '
 
 # %% ../nbs/00_units.ipynb 4
 BYTE     : int = 1
-KILOBYTE : int = BYTE * 1024
+KILOBYTE : int = BYTE * 1000
 MEGABYTE : int = KILOBYTE ** 2
 GIGABYTE : int = KILOBYTE ** 3
 TERABYTE : int = KILOBYTE ** 4
