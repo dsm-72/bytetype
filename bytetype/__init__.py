@@ -1,18 +1,6 @@
-__version__ = "0.0.5"
+__version__ = "0.0.7"
+from .bytes import Bytes
+from .enums import ByteUnit
+from .utils import format
 
-from bytetype.units import (
-    BYTE, KILOBYTE, MEGABYTE, GIGABYTE, TERABYTE,
-    PETABYTE, EXABYTE, ZETTABYTE, YOTTABYTE
-)
-
-from bytetype.utils import (
-    bytes_idx, bytes_to_size
-)
-
-from bytetype.enums import (
-    ByteSize, BytesUnit
-)
-
-from bytetype.bytes import (Bytes)
-
-__all__ = ['Bytes', 'ByteSize', 'BytesUnit', 'bytes_idx', 'bytes_to_size',]
+__all__ = ["Bytes", "ByteUnit", "format"]
