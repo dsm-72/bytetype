@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "enums.html#byteunit",
+    "href": "enums.html#byteunit",
+    "title": "enums",
+    "section": "ByteUnit",
+    "text": "ByteUnit\n\nsource\n\nByteUnit\n\n ByteUnit (value, names=None, module=None, qualname=None, type=None,\n           start=1, boundary=None)\n\nEnum where members are also (and must be) strings\n\nByteUnit.format(20999900000, precision=5)\n\n'20.99990 GB'"
+  },
+  {
+    "objectID": "bytes.html#bytes",
+    "href": "bytes.html#bytes",
+    "title": "Bytes",
+    "section": "Bytes",
+    "text": "Bytes\n\nsource\n\nBytes\n\n Bytes (size:int=0, precision:Optional[int]=3)\n\nA class for representing sizes in various byte units.\n\nBytes.to(100000)\n\n100.000 KB"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "bytetype",
+    "section": "",
+    "text": "A simple Byte type"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "bytetype",
+    "section": "Install",
+    "text": "Install\npip install bytetype"
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "bytetype",
+    "section": "Usage",
+    "text": "Usage\nNOTE that: - ByteSize corresponds to the base numeric value to use i.e. 1024 - BytesUnit corresponds to the string unit to use i.e. \"KB\"\n\nExamples"
+  },
+  {
+    "objectID": "utils.html#utils",
+    "href": "utils.html#utils",
+    "title": "utils",
+    "section": "Utils",
+    "text": "Utils\n\nsource\n\nformat\n\n format (size:int=1, base:int=1000, sep:Optional[str]=' ',\n         precision:Optional[int]=1, units:Iterable=('byte', 'kilobyte',\n         'megabyte', 'gigabyte', 'terabyte', 'petabyte', 'exabyte',\n         'zettabyte', 'yottabyte'))\n\n\nsource\n\n\ngetnum\n\n getnum (size:int=1, base:int=1000, precision:Optional[int]=1,\n         units:Iterable=('byte', 'kilobyte', 'megabyte', 'gigabyte',\n         'terabyte', 'petabyte', 'exabyte', 'zettabyte', 'yottabyte'))\n\nReturns the unit suffix for a given size and base\n\nsource\n\n\ngetsuf\n\n getsuf (size:int=1, base:int=1000, units:Iterable=('byte', 'kilobyte',\n         'megabyte', 'gigabyte', 'terabyte', 'petabyte', 'exabyte',\n         'zettabyte', 'yottabyte'))\n\nReturns the unit suffix for a given size and base\n\nsource\n\n\ngetexp\n\n getexp (size:int=1, base:int=1000, units:Iterable=('byte', 'kilobyte',\n         'megabyte', 'gigabyte', 'terabyte', 'petabyte', 'exabyte',\n         'zettabyte', 'yottabyte'))\n\nGets the power of the unit for a given size and base\n\nsource\n\n\ngetidx\n\n getidx (size:int=1, base:int=1000, units:Iterable=('byte', 'kilobyte',\n         'megabyte', 'gigabyte', 'terabyte', 'petabyte', 'exabyte',\n         'zettabyte', 'yottabyte'))\n\nGets the index of the unit for a given size and base"
+  }
+]
